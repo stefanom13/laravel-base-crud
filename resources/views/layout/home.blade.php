@@ -8,11 +8,10 @@
     <title>Crud</title>
 </head>
 <body>
-    <div class="container">
-        benvenuto laravel crud
-    </div>
-    
+  
     
     @yield('content')
+
+    
 </body>
 </html>

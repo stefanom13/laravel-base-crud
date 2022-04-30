@@ -1,0 +1,30 @@
+.titleHeader{
+    text-align: center;
+    color: rgb(25, 150, 108);
+}
+
+.contTab{
+    display:flex;
+    align-items:center;
+    gap: 30px;
+    .titleTab{
+        width:20%;
+        padding:10px 0px;
+        margin:0 auto;
+
+        h3{
+            color: rgb(108, 57, 138);
+        }
+    }
+}
+.contComics{
+    display:flex;
+    align-items:center;
+    gap: 30px;
+
+    .listComics{
+        width:20%;
+        padding:10px 0px;
+        margin:0 auto;
+    }
+}
