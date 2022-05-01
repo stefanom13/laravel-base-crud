@@ -8,6 +8,7 @@
         <div class="container contForm">
 
             <form action="{{ route('partials.store') }}"method="POST">
+                @csrf
                 {{-- titolo --}}
                 <div>
                     <label class="control-labelTitolo" for="name">Titolo</label>
