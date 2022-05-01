@@ -7,7 +7,7 @@
         </div>
         <div class="container contForm">
 
-            <form action="">
+            <form action="{{ route('partials.store') }}"method="POST">
                 {{-- titolo --}}
                 <div>
                     <label class="control-labelTitolo" for="name">Titolo</label>
