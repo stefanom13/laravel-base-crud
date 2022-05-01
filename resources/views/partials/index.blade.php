@@ -23,10 +23,13 @@
         <div class="listComics"> {{$comic['price']}} </div>
         <div class="listComics"> {{$comic['sale_date']}} </div>
         <div class="listComics"> {{$comic['type']}} </div>
-        <div class="listComics"> <a href="{{route('partials.show', $comic->id)}}">View</a> </div>
-        <div class="listComics"> <a href="{{route('partials.edit', $comic->id)}}">Edit</a> </div>
+        <div class="listComics"> <a href="{{route('partials.show', $comic)}}">View</a> </div>
+        <div class="listComics"> <a href="{{route('partials.edit', $comic)}}">Edit</a> </div>
     </div>
     @endforeach
+    
+    <button><a href="{{route('partials.create', $comic)}}">crea</a></button>
+
 </div>
 {{-- <div class="container">
     @foreach($comics as $comic)

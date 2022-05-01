@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+  
 
     <img src="{{$comics['thumb']}}" alt="">
     <h3> {{$comics->title}} </h3>
