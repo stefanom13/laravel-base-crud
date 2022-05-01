@@ -12,12 +12,12 @@
                 {{-- titolo --}}
                 <div>
                     <label class="control-labelTitolo" for="name">Titolo</label>
-                    <input type="text" name="title" id="name" placeholder="Inserisci qui il titolo">
+                    <input type="text" required name="title" id="name" placeholder="Inserisci qui il titolo">
                 </div>
                 {{-- tipologia --}}
                 <div>
                     <label class="" for="type">Tipologia:</label>
-                    <select class="" name="type" id="type">
+                    <select class="" required name="type" id="type">
                         <option value="">Seleziona tipologia</option>
                         <option value="book">Comic Book</option>
                         <option value="novel">Graphic Novel</option>
@@ -30,17 +30,17 @@
                 </div>
                 {{-- prezzo --}}
                 <div>
-                    <label class="" for="price">Prezzo:</label>
+                    <label class="" required for="price">Prezzo:</label>
                     <input class="" value="" type="text" name="price" id="price" placeholder="Prezzo Comic">
                 </div>
                 {{-- serie --}}
                 <div>
-                    <label class="" for="series">Serie:</label>
+                    <label class=""  required for="series">Serie:</label>
                     <input class="" value="" type="text" name="series" id="series" placeholder="Serie Comic">
                 </div>
                 {{-- data uscita --}}
                 <div>
-                    <label class="" for="sale_date">Data Uscita:</label>
+                    <label class="" required for="sale_date">Data Uscita:</label>
                     <input class="" value="" type="date" name="sale_date" id="sale_date"placeholder="Data Uscita">
                 </div>
                 {{-- descrizione --}}
