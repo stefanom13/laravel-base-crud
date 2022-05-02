@@ -21,10 +21,11 @@
             {{-- tipologia --}}
             <div>
                 <label class="" for="type">Tipologia:</label>
+              
                 <select class=""  required name="type" id="type">
                   
                     <option value="book" {{ $comics->type == 'book'? 'selected' : '' }}>book</option>
-                    <option value="novel"{{$comics->type == 'novel'? 'selected' : ''}}>novel</option>
+                    <option value="graphic novel"{{$comics->type == 'graphic novel'? 'selected' : ''}}>novel</option>
                 </select>
             </div>
             {{-- immagine --}}
