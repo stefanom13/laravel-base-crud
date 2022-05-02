@@ -46,7 +46,7 @@
                 {{-- descrizione --}}
                 <div>
                     <p class="">Descrizione:</p>
-                    <textarea class="" name="description" id="description" placeholder="Scrivi una Descrizione"></textarea>
+                    <textarea class="" name="description" cols="120" rows="10"  id="description" placeholder="Scrivi una Descrizione"></textarea>
                 </div>
                 <button class="" type="submit">
                     Crea!
