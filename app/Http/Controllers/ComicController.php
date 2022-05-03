@@ -87,7 +87,7 @@ class ComicController extends Controller
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $comics = Comic::findOrFail($id);
         $data = $request->all();
