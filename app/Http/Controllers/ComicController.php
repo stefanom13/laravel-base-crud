@@ -87,12 +87,14 @@ class ComicController extends Controller
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(Request $request,$id)
     {
-        dd($request->all());
+        $comics = Comic::findOrFail($id);
+        $data = $request->all();
+        $comics->update($data);
 
-        // $comic->update($data);
-        // return redirect()->route('partials.show', $comic->id);
+
+        return redirect()->route('partials.show', $comics->id);
     }
 
     /**
