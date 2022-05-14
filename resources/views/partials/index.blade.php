@@ -13,6 +13,7 @@
         <div class="titleTab"> <h3>Tipologia</h3>  </div>
         <div class="titleTab"> <h3>Guarda</h3>  </div>
         <div class="titleTab"> <h3>Modifica</h3>  </div>
+        <div class="titleTab"> <h3>Elimina</h3>  </div>
     </div>
 </div>
 <div class="container">
@@ -25,6 +26,16 @@
         <div class="listComics"> {{$comic['type']}} </div>
         <div class="listComics"> <a href="{{route('partials.show', $comic->id)}}">View</a> </div>
         <div class="listComics"> <a href="{{route('partials.edit', $comic->id)}}">Edit</a> </div>
+        {{-- <div class="listComics"> <a href="{{route('partials.destroy', $comic->id)}}">Delete</a> </div> --}}
+        <div class="listComics">
+            <form action="{{route('partials.destroy',[$comic])}}" method="POST">
+                @csrf
+                @method('DELETE')
+    
+                {{-- <input type="submit" value="delete"> --}}
+                <button type="submit">elimina</button>
+            </form>
+        </div>
     </div>
     @endforeach
     
